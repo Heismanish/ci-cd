@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/",(req,res)=>{res.send("this is home")})
 app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
